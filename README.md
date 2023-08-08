@@ -1,4 +1,4 @@
-# S03 - Ghibliotheque - Les films du studio Ghibli
+# Ghibliotheque - Les films du studio Ghibli
 
 ## Révision S03E07 - Pré-parkour
 
