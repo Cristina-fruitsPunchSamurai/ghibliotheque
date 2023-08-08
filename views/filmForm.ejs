@@ -1,0 +1,28 @@
+<%- include ('partials/header.ejs') %>
+<p class="retour"><a href="/">Retour à la home</a></p>
+
+<form class="form__recherche" method="get">
+    <label for="title"></label>
+    <input type="text" id="title" name="title" placeholder="Chercher un titre">
+    <input id="btn" type="submit" value="Envoyer">
+</form>
+
+<!-- S'il n'y a pas de paramètre query dans la route :  -->
+<% if (!title) { %>
+    <table>
+        <% for (let film of films) {%>
+            <tr>
+            <td class="film__title"><a href ="/films/<%= film.id %>"><%= film.title %></a></td>
+            <td><img class="film__image" src=<%= film.image_src %>></tr>
+            </tr>  
+       <% } %>
+        </table>
+<%} else {%>
+        <% for (let foundTitle of searchTerm) {%>
+            <p class="form__result"><a href="/films/<%= foundTitle.id %>"> <%= foundTitle.title %></a></p>
+       <% }%>
+<% } %>
+
+    
+</body>
+</html>

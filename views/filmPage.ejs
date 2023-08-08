@@ -1,0 +1,28 @@
+<%- include ('partials/header.ejs') %>
+<p class="retour"><a href="/">Retour à la home</a></p>
+
+<article class="filmPage__container">
+    <p class="filmPage__title">Titre :</p>
+    <p><%= filmFound.title %> </p>
+
+    <p class="filmPage__title">Titre original :</p> 
+    <p><%= filmFound.original_title %></p>
+
+    <p class="filmPage__title">Description :</p> 
+    <p><%= filmFound.description %> </p>
+
+    <p class="filmPage__title">Director:</p> 
+    <p><%= filmFound.director %></p>
+
+    <p class="filmPage__title">Image de l'affiche :</p> 
+    <p class="filmPage__content"><img class="filmPage__image" src=<%= filmFound.image_src %> ></p>
+
+    <p class="filmPage__title">Date de sortie :</p> 
+    <p><%= filmFound.release_date %></p>
+
+    <p class="filmPage__title">Durée du film :  </p> 
+    <p><%= filmFound.duration %> minutes</p>
+</article>
+
+</body>
+</html>

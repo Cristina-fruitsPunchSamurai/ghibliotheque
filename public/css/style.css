@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.header__container {
+    margin-top: 0;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 20%;
+    opacity: 0.6;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header__title1 {
+    font-family: 'Ysabeau', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 700;
+    color: #F08080;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.header__title2 {
+    font-family: 'Ysabeau', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 700;
+    color: #17202A ;
+    font-size: 2em;
+    text-align: center;
+}
+
+.header__title3 {
+    font-family: 'Ysabeau', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    color: #17202A ;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.header__title4 {
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #AED6F1 ;
+}
+
+.nav__title {
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.home__introduction {
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.2em;
+    width: 60%;
+    text-align: justify;
+    line-height: 30px;
+    margin: 35px auto;
+}
+
+table {
+    padding: 30px;
+}
+
+.film__title{
+    font-size: 1.3em;
+    color: #515A5A;
+    font-family: 'Ysabeau', sans-serif;
+
+}
+.film__image {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: #515A5A;
+}
+
+.retour {
+    font-family: 'Ysabeau', sans-serif;
+    color: #515A5A;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.notFound__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ysabeau', sans-serif;
+    color: #515A5A;
+}
+
+.notFound__title{
+    color: #000000;
+}
+
+.notFound__text1 {
+    font-size: 1.3em;
+}
+
+.notFound__text2 {
+    text-decoration: underline;
+}
+
+.filmPage__container {
+    width: 700px;
+    font-family: 'Ysabeau', sans-serif;
+    color: #515A5A;
+    border: 1px solid #515A5A;
+    border-radius: 25px;
+    margin:auto;
+    padding: 15px;
+}
+
+.filmPage__title {
+    font-family: 'Ysabeau', sans-serif;
+    color: #515A5A;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.filmPage__image {
+    width: 200px;
+}
+
+.filmPage__content{
+    text-align: center;
+}
+
+.form__recherche{
+    margin: 30px 0px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+#title {
+    width: 300px;
+    height: 30px;
+}
+
+#btn {
+    width: 100px;
+}
+
+.form__result{
+    padding-left: 40px;
+}
+
+.login {
+    font-family: 'Ysabeau', sans-serif;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    font-size: 1em;
+    padding-top: 3px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.form__login {
+    margin: 30px 0px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.welcomeMessage {
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}

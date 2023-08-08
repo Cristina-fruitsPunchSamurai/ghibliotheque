@@ -1,0 +1,15 @@
+<%- include ('partials/header.ejs') %>
+<p class="retour"><a href="/">Retour à la home</a></p>
+<% if (!pseudo) {%>
+    <form class="form__login" method="post">
+        <label for="pseudo"></label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo">
+        <input id="btn" type="submit" value="Envoyer">
+    </form>
+<% } else { %>
+    <p class="welcomeMessage"><%= welcomeMessage %></p>
+<%}%>
+
+
+</body>
+</html>
