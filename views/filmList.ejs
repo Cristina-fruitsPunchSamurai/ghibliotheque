@@ -4,10 +4,14 @@
 <table>
     <% for (let film of films) {%>
         <tr>
-        <td class="film__title"><a href ="/films/<%= film.id %>"><%= film.title %></a></td>
-        <td><img class="film__image" src=<%= film.image_src %>></tr>
-        </tr>  
+        <td class="film__title">
+            <a href ="/films/<%= film.id %>"><%= film.title %></a>
+        </td>
+        <td>
+            <img class="film__image" src=<%= film.image_src %>>
+        </td>
+        </tr>
    <% } %>
-    </table>
+</table>
 </body>
 </html>

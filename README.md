@@ -1,71 +1,29 @@
-# S03 - Ghibliotheque - Les films du studio Ghibli
+# Ghibliotheque - Les films du studio Ghibli
 
-## Révision S03E07 - Pré-parkour
+Website displaying the movies of the studio Ghibli.🐉 ⛩️ 🎞
 
-<details><summary>
-Révision EJS, public folder, routes, routes paramétrées...
-</summary>
+This was one of my first projects in NodeJS. My objectif was to learn the fondamentals of JavaScript on server side using Express. As templating language, I used EJS.
 
-<br>
-
-Votre mission, si vous l'acceptez : 
-
-**Faire un joli site de présentation des (merveilleux) films du studio Ghibli** 
-
-Pour ça, trois routes : 
-
-- Route `/` : 
-  - affiche une **page d'accueil**, avec : 
-    - une belle entête, qu'on pourra réutiliser dans les vues suivantes
-    - un lien vers la page des liste des films
+## Features
+- Route `/` Home page
+- Route `/films` List of all the movies generated from a Json file. I decided to display the name and the picture only.
+- Route `/film/:id` Page of one selected movie. Here, we can find detailed information about the movie : title, original title, description, director, release date, duration.
+- Route GET `/search` Search engine to find a movie by two letters. The result is a list of movies containing the searched term.
+- 404 Page when user tries to access a non declared route.
+- Route POST `/login` allows the user to enter a username and displays a welcome message.
 
 
-- Route `/films` : 
-  - affiche la **liste des films**
-  - on reste sobre pour chaque film : juste le `nom` du film suffira très bien.
-    - éventuellement l'image de `l'affiche` du film si on veut faire un peu de CSS
-  - si l'utilisateur clique sur un des films
+## Technologies
+JavaScript
+Express
+EJS
 
+## Screenshots
+### HomePage
+![home](https://github.com/Cristina-fruitsPunchSamurai/ghibliotheque/assets/108081381/4cc3081b-dbe0-4280-89e4-0ad4afc2bc00)
 
-- Route `/films/:id` : 
-  - affiche la **page d'un** film 
-    - (celui dont l'ID match la requête)
-  - on y affiche les autres informations qu'on possède sur le film : `titre`, `titre original`, `description`, `director`, `image de l'affiche`, `date de sortie`, `durée du film`
+### Search
+![recherche-film](https://github.com/Cristina-fruitsPunchSamurai/ghibliotheque/assets/108081381/b3c0d267-1253-4879-a76a-acea9fe53dfb)
 
-- En bonus : 
-  - une **page 404**, si l'utilisateur accède à une route non déclarée ! 
-
-Pour parvenir à ce résultat, vous pouvez appliquer les notions vues en cours ! 
-
-
-Pour l'intégration (HTML/CSS), c'est libre ! Un mot d'ordre **faites sobre** ! L'objectif n'est pas de travailler le CSS ;) 
-
-
-Bonne chance !
-
-</details>
-
-## Révision S03E08 - Apprentissage Formulaire, GET et POST
-
-<details><summary>
-Révision/approfondissement FORM, GET & POST
-</summary>
-
-- Sur la page d'accueil : 
-   - Rajouter un **formulaire de recherche** qui déclenche un GET sur la route `/search` : 
-      - avec un input pour faire une recherche
-      - et un bouton pour soumettre le formulaire
-   - Implémenter la route GET `/search` côté backend : 
-      - dans un premier temps, cette route renvoie **une page** qui liste tous les films (similaire à la route /films donc).
-      - puis dans un second temps, cette route accepte des query parmams : 
-        - si on appelle cette route avec `/search?title=of` (par exemple), on affiche uniquement les films qui possède la chaine de caractère `"of"` dans le titre du film.
-        - (bonus) si on appelle cette route avec `/search?order=asc`, on affiche les films triés par ordre alphabétique du titre. Côté affichage, dans le formulaire, on pourrait mettre une checkbox qui, lorsqu'elle est cochée, rajoute ce query params dans la requête !
-
-- Sur la page d'accueil : 
-   - Rajouter un **formulaire de login** qui déclenche un POST sur la route `/login` :
-      - avec un input pour ajouter le pseudo de l'utilisateur
-      - et un bouton pour soumettre le formulaire
-   - Implémenter la route POST `/login` côté backend : 
-      - elle affiche une page avec écrit "Bonjour PSEUDO_DE_L_UTILISATEUR", et ça sera très bien !
-
-</details>
+### 404
+![404page](https://github.com/Cristina-fruitsPunchSamurai/ghibliotheque/assets/108081381/e66c5559-0624-4044-827b-9e56a9bb84bb)

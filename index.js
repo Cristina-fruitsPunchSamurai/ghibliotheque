@@ -24,7 +24,7 @@ app.get('/films',(requete, response) => {
 ///////// Troisième route /////////
 app.get('/films/:id',(requete, response) => {
     const id = Number(requete.params.id)
-    const filmFound = films.find(film => film.id === id) //Il me sort l'objet 
+    const filmFound = films.find(film => film.id === id) //Il me sort l'objet
     response.status(200)
     // Si l'id n'est pas trouvé dans le json, ma variable retourne undefined
     if (filmFound == undefined){
@@ -38,7 +38,6 @@ app.get('/search',(requete, response) => {
     const title = requete.query.title
     response.status(200)
     const searchTerm = films.filter(film => film.title.includes(title))
-    console.log(searchTerm)
     response.render('filmForm', {searchTerm, films, title})
 })
 
@@ -51,7 +50,7 @@ app.get('/login',(requete, response) => {
     let welcomeMessage= "";
     response.render('loginForm', {welcomeMessage, pseudo})
 })
-/// -> On accede aux valeurs du formulaire 
+/// -> On accede aux valeurs du formulaire
 app.post('/login',(requete, response) => {
     response.status(200)
     const pseudo = requete.body.pseudo
